@@ -17,7 +17,7 @@ public class WebSecurityConfig {
             throws Exception
     {
         http
-                .authorizeRequests()
+                .authorizeHttpRequests()
                 .anyRequest().fullyAuthenticated()
                 .and()
                 .formLogin();
